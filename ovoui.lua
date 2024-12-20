@@ -5,11 +5,19 @@ local runService = game:GetService("RunService")
 local coreGui = game:GetService("CoreGui")
 
 -- Library Definition
-local Library = {}
-Library.Tree = {}
-
+local Space = {}
+Space.Tree = {}
+--[[
+kavName = kavName or "Library"
+table.insert(Space, kavName)
+for i,v in pairs(game.CoreGui:GetChildren()) do
+	if v:IsA("ScreenGui") and v.Name == kavName then
+		v:Destroy()
+	end
+end
+]]
 -- Utility Functions
-function Library:validate(defaults, options)
+function Space:validate(defaults, options)
 	options = options or {}
 	for i, v in pairs(defaults) do
 		if options[i] == nil then
@@ -20,12 +28,12 @@ function Library:validate(defaults, options)
 end
 
 -- Initialize GUI Library
-function Library:Init(options)
-	options = Library:validate({
+function Space:Init(options)
+	options = Space:validate({
 		name = "Space X | Version 1.0.0"
 	}, options or {})
 
-	local G2L = Library.Tree
+	local G2L = Space.Tree
 	local GUI = {}
 	
 	--gui
@@ -211,8 +219,8 @@ function Library:Init(options)
 		G2L["15"]["Name"] = [[Page]];
 		G2L["15"]["BackgroundTransparency"] = 1;
 		
-		function Library:addTap(options)
-			options = Library:validate({
+		function Space:addTap(options)
+			options = Space:validate({
 				name = "nil",
 				icon = "911"
 			}, options or {})
@@ -335,8 +343,8 @@ function Library:Init(options)
 			
 		end
 		
-		function Library:addbutton(options)
-			options = Library:validate({
+		function Space:addbutton(options)
+			options = Space:validate({
 				name = "Click me",
 				icon = "rbxassetid://17293879614",
 				code = function() end
@@ -400,3 +408,5 @@ function Library:Init(options)
 	end
 	
 end
+
+return Space
