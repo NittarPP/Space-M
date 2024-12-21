@@ -76,157 +76,164 @@ G2L["8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["8"]["Position"] = UDim2.new(0.37012, 0, 0.1084, 0);
 
 
--- StarterGui.Space X.Scalset.KeyUI.Board.Main.KeyButton.LocalScript
-G2L["9"] = Instance.new("LocalScript", G2L["8"]);
-
-
-
 -- StarterGui.Space X.Scalset.KeyUI.Board.KeyGui
-G2L["a"] = Instance.new("Frame", G2L["4"]);
-G2L["a"]["Visible"] = false;
-G2L["a"]["BorderSizePixel"] = 0;
-G2L["a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["a"]["Size"] = UDim2.new(0.49499, 0, 0.42826, 0);
-G2L["a"]["Position"] = UDim2.new(0.25246, 0, 0.21997, 0);
-G2L["a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["a"]["Name"] = [[KeyGui]];
+G2L["9"] = Instance.new("Frame", G2L["4"]);
+G2L["9"]["Visible"] = false;
+G2L["9"]["BorderSizePixel"] = 0;
+G2L["9"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["9"]["Size"] = UDim2.new(0.49499, 0, 0.42826, 0);
+G2L["9"]["Position"] = UDim2.new(0.25246, 0, 0.21997, 0);
+G2L["9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["9"]["Name"] = [[KeyGui]];
 
 
 -- StarterGui.Space X.Scalset.KeyUI.Board.KeyGui.UICorner
-G2L["b"] = Instance.new("UICorner", G2L["a"]);
-G2L["b"]["CornerRadius"] = UDim.new(0.07507, 0);
+G2L["a"] = Instance.new("UICorner", G2L["9"]);
+G2L["a"]["CornerRadius"] = UDim.new(0.07507, 0);
 
 
 -- StarterGui.Space X.Scalset.KeyUI.Board.KeyGui.UIGradient
-G2L["c"] = Instance.new("UIGradient", G2L["a"]);
-G2L["c"]["Rotation"] = -95;
-G2L["c"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(130, 130, 130)),ColorSequenceKeypoint.new(0.481, Color3.fromRGB(144, 144, 144)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(159, 159, 159))};
+G2L["b"] = Instance.new("UIGradient", G2L["9"]);
+G2L["b"]["Rotation"] = -95;
+G2L["b"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(130, 130, 130)),ColorSequenceKeypoint.new(0.481, Color3.fromRGB(144, 144, 144)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(159, 159, 159))};
 
 
 -- StarterGui.Space X.Scalset.KeyUI.Board.KeyGui.UserName
-G2L["d"] = Instance.new("TextBox", G2L["a"]);
-G2L["d"]["CursorPosition"] = -1;
-G2L["d"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["d"]["BorderSizePixel"] = 0;
-G2L["d"]["TextWrapped"] = true;
-G2L["d"]["TextSize"] = 14;
-G2L["d"]["Name"] = [[UserName]];
-G2L["d"]["TextScaled"] = true;
-G2L["d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["d"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["d"]["RichText"] = true;
-G2L["d"]["ClearTextOnFocus"] = false;
-G2L["d"]["Size"] = UDim2.new(0.78427, 0, 0.1, 0);
-G2L["d"]["Position"] = UDim2.new(0.10716, 0, 0.28052, 0);
-G2L["d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["d"]["Text"] = [[Player Name]];
+G2L["c"] = Instance.new("TextBox", G2L["9"]);
+G2L["c"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["c"]["BorderSizePixel"] = 0;
+G2L["c"]["TextWrapped"] = true;
+G2L["c"]["TextSize"] = 14;
+G2L["c"]["Name"] = [[UserName]];
+G2L["c"]["TextScaled"] = true;
+G2L["c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["c"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["c"]["RichText"] = true;
+G2L["c"]["ClearTextOnFocus"] = false;
+G2L["c"]["Size"] = UDim2.new(0.78427, 0, 0.1, 0);
+G2L["c"]["Position"] = UDim2.new(0.10716, 0, 0.28052, 0);
+G2L["c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["c"]["Text"] = [[Player Name]];
 
 
 -- StarterGui.Space X.Scalset.KeyUI.Board.KeyGui.UserName.UICorner
-G2L["e"] = Instance.new("UICorner", G2L["d"]);
-G2L["e"]["CornerRadius"] = UDim.new(0, 19);
-
-
--- StarterGui.Space X.Scalset.KeyUI.Board.KeyGui.UserName.LocalScript
-G2L["f"] = Instance.new("LocalScript", G2L["d"]);
-
+G2L["d"] = Instance.new("UICorner", G2L["c"]);
+G2L["d"]["CornerRadius"] = UDim.new(0.75069, 0);
 
 
 -- StarterGui.Space X.Scalset.KeyUI.Board.KeyGui.PIN
-G2L["10"] = Instance.new("TextBox", G2L["a"]);
-G2L["10"]["CursorPosition"] = -1;
-G2L["10"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["10"]["BorderSizePixel"] = 0;
+G2L["e"] = Instance.new("TextBox", G2L["9"]);
+G2L["e"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["e"]["BorderSizePixel"] = 0;
+G2L["e"]["TextWrapped"] = true;
+G2L["e"]["TextSize"] = 14;
+G2L["e"]["Name"] = [[PIN]];
+G2L["e"]["TextScaled"] = true;
+G2L["e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["e"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["e"]["RichText"] = true;
+G2L["e"]["ClearTextOnFocus"] = false;
+G2L["e"]["Size"] = UDim2.new(0.78427, 0, 0.1, 0);
+G2L["e"]["Position"] = UDim2.new(0.10518, 0, 0.51363, 0);
+G2L["e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["e"]["Text"] = [[PIN]];
+
+
+-- StarterGui.Space X.Scalset.KeyUI.Board.KeyGui.PIN.UICorner
+G2L["f"] = Instance.new("UICorner", G2L["e"]);
+G2L["f"]["CornerRadius"] = UDim.new(0, 19);
+
+
+-- StarterGui.Space X.Scalset.KeyUI.Board.KeyGui.Login
+G2L["10"] = Instance.new("TextButton", G2L["9"]);
 G2L["10"]["TextWrapped"] = true;
+G2L["10"]["BorderSizePixel"] = 0;
 G2L["10"]["TextSize"] = 14;
-G2L["10"]["Name"] = [[PIN]];
+G2L["10"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["10"]["TextScaled"] = true;
 G2L["10"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["10"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
 G2L["10"]["RichText"] = true;
-G2L["10"]["ClearTextOnFocus"] = false;
-G2L["10"]["Size"] = UDim2.new(0.78427, 0, 0.1, 0);
-G2L["10"]["Position"] = UDim2.new(0.10518, 0, 0.51363, 0);
+G2L["10"]["Size"] = UDim2.new(0.3969, 0, 0.19755, 0);
+G2L["10"]["Name"] = [[Login]];
 G2L["10"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["10"]["Text"] = [[PIN]];
-
-
--- StarterGui.Space X.Scalset.KeyUI.Board.KeyGui.PIN.UICorner
-G2L["11"] = Instance.new("UICorner", G2L["10"]);
-G2L["11"]["CornerRadius"] = UDim.new(0, 19);
-
-
--- StarterGui.Space X.Scalset.KeyUI.Board.KeyGui.Login
-G2L["12"] = Instance.new("TextButton", G2L["a"]);
-G2L["12"]["TextWrapped"] = true;
-G2L["12"]["BorderSizePixel"] = 0;
-G2L["12"]["TextSize"] = 14;
-G2L["12"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["12"]["TextScaled"] = true;
-G2L["12"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["12"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["12"]["RichText"] = true;
-G2L["12"]["Size"] = UDim2.new(0.3969, 0, 0.19755, 0);
-G2L["12"]["Name"] = [[Login]];
-G2L["12"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["12"]["Text"] = [[Login]];
-G2L["12"]["Position"] = UDim2.new(0.30165, 0, 0.69538, 0);
+G2L["10"]["Text"] = [[Login]];
+G2L["10"]["Position"] = UDim2.new(0.30165, 0, 0.69538, 0);
 
 
 -- StarterGui.Space X.Scalset.KeyUI.Board.KeyGui.Login.UICorner
-G2L["13"] = Instance.new("UICorner", G2L["12"]);
-G2L["13"]["CornerRadius"] = UDim.new(0.46, 0);
+G2L["11"] = Instance.new("UICorner", G2L["10"]);
+G2L["11"]["CornerRadius"] = UDim.new(0.46, 0);
 
 
 -- StarterGui.Space X.Scalset.KeyUI.Board.KeyGui.TextLabel
-G2L["14"] = Instance.new("TextLabel", G2L["a"]);
-G2L["14"]["TextWrapped"] = true;
-G2L["14"]["BorderSizePixel"] = 0;
-G2L["14"]["TextScaled"] = true;
-G2L["14"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["14"]["TextSize"] = 14;
-G2L["14"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["14"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["14"]["BackgroundTransparency"] = 1;
-G2L["14"]["Size"] = UDim2.new(0, 394, 0, 57);
-G2L["14"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["14"]["Text"] = [[Enter The User Name and Pin]];
-G2L["14"]["Position"] = UDim2.new(0.10716, 0, 0.03161, 0);
+G2L["12"] = Instance.new("TextLabel", G2L["9"]);
+G2L["12"]["TextWrapped"] = true;
+G2L["12"]["BorderSizePixel"] = 0;
+G2L["12"]["TextScaled"] = true;
+G2L["12"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["12"]["TextSize"] = 14;
+G2L["12"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["12"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["12"]["BackgroundTransparency"] = 1;
+G2L["12"]["Size"] = UDim2.new(0.7819, 0, 0.22521, 0);
+G2L["12"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["12"]["Text"] = [[Enter The User Name and Pin]];
+G2L["12"]["Position"] = UDim2.new(0.10716, 0, 0.03161, 0);
 
 
 -- StarterGui.Space X.Scalset.KeyUI.Board.KeyGui.TextLabel.UIGradient
-G2L["15"] = Instance.new("UIGradient", G2L["14"]);
-G2L["15"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.481, Color3.fromRGB(236, 236, 236)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(223, 223, 223))};
+G2L["13"] = Instance.new("UIGradient", G2L["12"]);
+G2L["13"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.481, Color3.fromRGB(236, 236, 236)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(223, 223, 223))};
 
 
 -- StarterGui.Space X.Scalset.MainUI
-G2L["16"] = Instance.new("Folder", G2L["2"]);
-G2L["16"]["Name"] = [[MainUI]];
+G2L["14"] = Instance.new("Folder", G2L["2"]);
+G2L["14"]["Name"] = [[MainUI]];
 
 
 -- StarterGui.Space X.Scalset.BanUI
-G2L["17"] = Instance.new("Folder", G2L["2"]);
-G2L["17"]["Name"] = [[BanUI]];
+G2L["15"] = Instance.new("Folder", G2L["2"]);
+G2L["15"]["Name"] = [[BanUI]];
 
 
--- StarterGui.Space X.Scalset.KeyUI.Board.Main.KeyButton.LocalScript
-local function C_9()
-local script = G2L["9"];
-	script.Parent.MouseButton1Down:Connect(function()
-		if script.Parent.Parent.Parent.KeyGui.Visible == true then
-			script.Parent.Parent.Parent.KeyGui.Visible = false
+-- StarterGui.Space X.ServerScript
+G2L["16"] = Instance.new("LocalScript", G2L["1"]);
+G2L["16"]["Name"] = [[ServerScript]];
+
+
+-- StarterGui.Space X.ServerScript
+local function C_16()
+local script = G2L["16"];
+	local St = script.Parent.Parent["Space X"].Scalset
+	local KeyUI =St.KeyUI
+	local MainUI =St.MainUI
+	
+	function payload()
+		KeyUI.Board.KeyGui.UserName.Text = ""..game.Players.LocalPlayer.Name
+	end
+	
+	payload()
+	
+	KeyUI.Board.Main.KeyButton.MouseButton1Down:Connect(function()
+		if KeyUI.Board.KeyGui.KeyGui.Visible == true then
+			KeyUI.Board.KeyGui.KeyGui.Visible = false
 		else
-			script.Parent.Parent.Parent.KeyGui.Visible = true
+			KeyUI.Board.KeyGui.KeyGui.Visible = true
 		end
 	end)
+	
+	
+	KeyUI.Board.KeyGui.Login.MouseButton1Down:Connect(function()
+		local username = KeyUI.Board.KeyGui.UserName.Text
+		local pin = KeyUI.Board.KeyGui.PIN.Text
+		
+		print(username,pin)
+		
+		KeyUI.Board.Visible = false
+	end)
 end;
-task.spawn(C_9);
--- StarterGui.Space X.Scalset.KeyUI.Board.KeyGui.UserName.LocalScript
-local function C_f()
-local script = G2L["f"];
-	script.Parent.Text = ""..game.Players.LocalPlayer.Name
-end;
-task.spawn(C_f);
+task.spawn(C_16);
 
 return G2L["1"], require;
 
