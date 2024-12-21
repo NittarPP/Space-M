@@ -6,6 +6,7 @@ If you use this and don't credit me, i can DMCA you.
 ]]
 -- ◀ Script ▶
 
+
 local G2L = {};
 
 -- StarterGui.Space X
@@ -215,11 +216,13 @@ local script = G2L["16"];
 	
 	payload()
 	
+	
+	
 	KeyUI.Board.Main.KeyButton.MouseButton1Down:Connect(function()
-		if KeyUI.Board.KeyGui.KeyGui.Visible == true then
-			KeyUI.Board.KeyGui.KeyGui.Visible = false
+		if KeyUI.Board.KeyGui.Visible == true then
+			KeyUI.Board.KeyGui.Visible = false
 		else
-			KeyUI.Board.KeyGui.KeyGui.Visible = true
+			KeyUI.Board.KeyGui.Visible = true
 		end
 	end)
 	
